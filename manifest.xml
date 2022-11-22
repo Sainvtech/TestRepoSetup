@@ -1,6 +1,0 @@
-<manifest>
-    <remote name="tools" fetch="https://github.com/inevitableinfotech/"/>
-        <default remote="tools" revision="master" />
-        <remote name="tools" fetch="../tools"/>
-        <project name="AndroidCommonTools.git" path="projects/tools" revision="7e674d5fce8b2b1112ca3690721ad3e838eb5bd7"/>
-</manifest>
