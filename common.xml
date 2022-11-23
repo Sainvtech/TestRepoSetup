@@ -12,24 +12,23 @@
      note: this manifest is not intended to be used directly, but should be included
      into a manifest that also declares a kernel -->
 
-<remote name="seL4"
+<remote name="Repo_test_init"
 fetch="."
 />
-
-<remote fetch="../sel4proj" name="sel4proj"/>
+<remote name="Repo_test_init" fetch="https://github.com/Sainvtech/Repo_test_init"/>
+<!-- <remote fetch="../sel4proj" name="sel4proj"/>
 <remote fetch="https://github.com/nanopb" name="nanopb" />
-<remote fetch="https://github.com/riscv" name="opensbi"/>
+<remote fetch="https://github.com/riscv" name="opensbi"/> -->
 
 <default revision="master"
-remote="seL4"
-/>
+remote="Repo_test_init"/>
 
-<project name="seL4_tools.git" path="tools/seL4">
+<!-- <project name="seL4_tools.git" path="tools/seL4">
     <linkfile src="cmake-tool/init-build.sh" dest="init-build.sh"/>
     <linkfile src="cmake-tool/griddle" dest="griddle"/>
-</project>
-<project name="sel4runtime.git" path="projects/sel4runtime"/>
-<project name="musllibc.git" path="projects/musllibc" revision="sel4"/>
+</project> -->
+<project name="Repo_test_init.git" path="projects/."/>
+<!-- <project name="musllibc.git" path="projects/musllibc" revision="sel4"/>
 <project name="seL4_libs.git" path="projects/seL4_libs"/>
 <project name="util_libs.git" path="projects/util_libs"/>
 <project name="sel4test.git" path="projects/sel4test">
@@ -37,6 +36,6 @@ remote="seL4"
 </project>
 <project name="sel4_projects_libs" path="projects/sel4_projects_libs" />
 <project name="opensbi" remote="opensbi" revision="refs/tags/v0.8" path="tools/opensbi"/>
-<project name="nanopb" path="tools/nanopb" revision="refs/tags/0.4.3" upstream="master" remote="nanopb"/>
+<project name="nanopb" path="tools/nanopb" revision="refs/tags/0.4.3" upstream="master" remote="nanopb"/> -->
 
 </manifest>
